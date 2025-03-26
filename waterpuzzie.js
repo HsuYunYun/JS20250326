@@ -8,5 +8,11 @@ document.addEventListener("DOMContentLoaded",() =>{
 
     levelSelect.addEventListener('change',(event)=>{
         const selectedLevel = parseInt(event.target.value,10)
-    })
+    });
+
+    function playGame(){
+        
+    }
+
+    playButton.addEventListener('click',playGame);
 });
