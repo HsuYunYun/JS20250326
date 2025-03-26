@@ -6,13 +6,16 @@ document.addEventListener("DOMContentLoaded",() =>{
     const tubes = [];
     let levelCount = 1;
 
+    function chooseLevel(Level){
+        levelCount = Level;
+        document.getElementById('level-count').textContent = levelCount;
+    }
     levelSelect.addEventListener('change',(event)=>{
-        const selectedLevel = parseInt(event.target.value,10)
+        const selectedLevel = parseInt(event.target.value,10);
+        chooseLevel(selectedLevel);
     });
 
-    function playGame(){
-        
-    }
-
-    playButton.addEventListener('click',playGame);
+    playButton.addEventListener('click', ()=>{
+        alert('開始遊戲')
+    });
 });
