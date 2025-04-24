@@ -34,12 +34,13 @@ body{
     height: 200px;
     border: 2px solid black;
     border-radius: 0 0  10px 10px;
+    border-top: 0px;
     margin: 10px;
     display: flex;
     flex-direction: column-reverse;
     overflow: hidden;
     margin-top: 20px;
-    border-top: nones;
+    margin-top: 20px;
 }
 
 .water{
